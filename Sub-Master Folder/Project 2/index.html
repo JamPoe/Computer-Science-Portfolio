@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <title> Home </title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <!-- The number generator. Visuals don't work yet -->
+  <script>
+    function roll() {
+      var roll = document.getElementById("roll");
+      var min = prompt("Enter the smallest number");
+      var max = prompt("Enter the biggest number");
+      var range = (max - min) + 1;
+      roll.innerHTML = alert(Math.floor(Math.random() * range));
+    }
+    </script>
+  <body style="background: #f2f2f2">
+    <center> <strong> H<a class="menu" title="I wonder what this goes to?" href="#NoSecretForYou" class="secret">o</a>me </strong> </center>
+    <br>
+    <!-- The anchor containing my steam profile and overlayed steam logo -->
+    <div id="steam">
+      <a href="" onclick="window.open('http://talk.smtcs.rocks/users/jpoe/activity')"> <img style="border: 1px solid black" class="logo" src="http://everest.summitps.org/_/rsrc/1407610631546/about-our-school/summit-public-schools/33vfrgale1d8tdn1ytdy.jpeg?height=196&width=200" width="32px" height="32px">
+      <img width="128" height="128" class="profile" src="http://talk.smtcs.rocks/user_avatar/talk.smtcs.rocks/jpoe/120/79_1.png"> </a>
+    </div>
+    <!-- The navbar -->
+    <div id="dec">
+    <center>
+      <table>
+        <ul>
+          <td> <a href="index.html"> <li> Home </li> </a> </td>
+          <td> <a href="" onclick="roll()" class="roll"> <li> <span> Random Number Generator [BROKEN] </span> </li> </a> </td>
+          <td> <a href="search.html"> <li> Search </li> </a> </td>
+          <td> <a href="" onclick="window.open('mailto:jpoe.ep@mysummitps.org?subject=Some feedback&body=Here is some feedback I have for you:')"> <li> Feedback </li> </a> </td>
+          <td> <a href="#"> <li> Top of page </li> </a> </td>
+          <td> <a href="#content"> <li> Page Content </li> </a> </td>
+        </ul>
+      </table>
+      <br>
+    </center>
+  </div>
+    <br>
+    <!-- The experimental div for visuals of the generator; not working -->
+    <div id="roll">
+    </div>
+    <center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p> Welcome to my webpage! This website honestly doesn't really have a purpose and contains random things. </p>
+      <p> Well, now that I think of it, Josh "made" a chat site but really embeded someone else's work using iframe, so please<!-- Link to instant mail composition --> <a class="shame" title="Yeah! Go get 'em!" href="" onclick="window.open('mailto:jhickson.ep@mysummitps.org?subject=Shame on you!&body=Why did you embed that?!')"> shame</a> him for me. </p>
+      <p> This page was created for a project we are doing in class where we simply just make about anything from scratch (with js). At the time, I couldn't think of anything, so I decided to make something simple. Due to that, I have made multiple, random things. </p>
+      <p> Unfortunately, me not being a very creative person, it has been hard to think of ideas to put up, or at least not very pathetic ideas. </p>
+      <p> While the project was supposed to involve js, I've not added js to certain things simply because it was not needed. </p>
+      <p> Like mentioned in the content below, I am so happy that I finally managed to get the navbar to actually follow with scrolling. </p>
+      <p> What I find frustrating about making this is that I just can't seem to come up with ideas and it takes long amounts of time to actually get something done. Since I haven't really thought of any new functions to add, I have just resorted to somewhat decorating my site </p>
+      <p> If I actually have the memory to do so, I might continue to update this page since I found it quite fun to decorate this page </p>
+      <strong> Content that is on the site: </strong>
+      <!-- A simple list containing all of the content I have added -->
+      <ul id="content">
+        <br>
+        <li> A random number generator that can have a range set (I don't know if I can get this fixed :( ) </li>
+        <br>
+        <li> A navbar that actually follows as the page is scrolled (which I failed at doing the first time we made html pages) </li>
+        <br>
+        <li> A search bar that does an inurl search, which means it only looks for words within urls, not including the content of the page itself </li>
+        <br>
+        <li> A link to give me feedback </li>
+        <br>
+        <li> A link to shame Josh for iframing someone else's work </li>
+        <br>
+        <li> A miniature easter egg that I might update over time <!-- I lied --> </li>
+        <br>
+        <li> Anchors for the top and bottom of the page </li>
+        <br>
+        <li> An anchor for my steam profile, along with my profile picture, decorated with a border, and an overlaying steam logo </li>
+        <br>
+        <li> Magical, hidden comments within the code </li>
+      </ul>
+    </center>
+      <div id="botBar">
+          <a href="../Project 1/Main.html"> Project 1</a> <a href="../Project 2/index.html"> Project 2 </a> <a href="../Project 3/index.html"> Project 3 </a> <a href="../Project 4/snake.html"> Project 4 </a> <a href="../Vindinium/index.html"> Vindinium </a> <a href="../Bot Test/index.html"> Bot Test </a>
+      </div>
+  </body>
+  <!-- The bottom of the page. The page is not long enough for this anchor to be useful, since the content anchor already brings the page to the bottom -->
+  <a id="footer"/>
+</html>

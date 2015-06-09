@@ -1,0 +1,23 @@
+body {
+    background-image: url("http://0.s3.envato.com/files/38522860/_MG_1248.jpg");
+    background-repeat: no-repeat;
+    background-size: 1366px 768px;
+}
+#container {
+    background: white;
+    position: absolute;
+    left: 75px;
+    margin: scroll;
+    width: 1000px;
+    height: 450px;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+#container p {
+    position: relative;
+    left: 10px;
+    
+}
+#container a {
+    color: black;
+}

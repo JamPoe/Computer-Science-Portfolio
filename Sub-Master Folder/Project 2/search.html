@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <title> Search Bar </title>
+  <!-- Copy pasting because I was too dum to make an external script and load that -->
+  <script>
+    function roll() {
+      var min = prompt("Enter the smallest number");
+      var max = prompt("Enter the biggest number");
+      var range = (max - min);
+      var result = (window.alert(Math.floor(Math.random() * range)) + min);
+      if(range < min) {
+        var result = min;
+      }
+      else if(range > max) {
+        var result = max;
+      }
+    }
+    </script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <body style="background: #f2f2f2">
+    <!-- Same navbar, but with fewer options -->
+    <div id="dec">
+    <center>
+      <table>
+        <ul>
+          <td> <a href="index.html"> <li> Home </li> </a> </td>
+            <td> <a href="" onclick="roll()"> <li> <span> Random Number Generator </span> </li> </a> </td>
+          <td> <a href="search.html"> <li> Search </li> </a> </td>
+          <td> <a href="" onclick="window.open('mailto:jpoe.ep@mysummitps.org?subject=Feedback&body=Here are some suggestions I have:')"> <li> Feedback </li> </a> </td>
+        </ul>
+      </table>
+      <br>
+    </center>
+  </div>
+  <br>
+    <!-- The location that would get further text entered -->
+  <form action="http://www.google.com/search" method="get">
+    <!-- Input was named "q" so that the url worked properly -->
+    <center> <input type="text" name="q" value="inurl: "/>
+      <!-- Simple search button, for those who don't know [enter] exists -->
+    <input type="submit" value="Search"/> </center>
+  </form>
+  </body>
+</html>

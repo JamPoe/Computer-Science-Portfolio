@@ -1,0 +1,11 @@
+#myCanvas {
+    border: 1px solid black;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#myCanvas:hover {
+    box-shadow: 0px 0px 100px 20px lightblue;
+}
+body {
+    overflow: hidden;
+}

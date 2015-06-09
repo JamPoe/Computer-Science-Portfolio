@@ -1,0 +1,36 @@
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden
+    }
+#menu {
+  background-color: #D6D6D6;
+  border-radius: 5px
+    }
+#menu li {
+  display: inline;
+  padding: 10px;
+  float: left
+}
+#menu a{
+  text-decoration: none;
+  padding: 8px, 8px, 8px, 8px, 8px, 8px
+    }
+h1 {
+  text-align: center
+    }
+p {
+  text-align: center
+    }
+#parts table {
+  list-style-type: none;
+    }
+#parts table img {
+  display: inline
+  width: 100px;
+  height: 100px
+    }
+#parts {
+  margin-left: 500px
+    }

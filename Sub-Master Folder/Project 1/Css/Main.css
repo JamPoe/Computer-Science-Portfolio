@@ -1,0 +1,41 @@
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden
+    }
+h1 {
+  text-align: center
+    }
+p {
+  text-align: center
+    }
+span {
+  color: blue;
+  text-decoration: underline
+    }
+#menu {
+  background-color: #C3C3C3;
+  -webkit-animation-name: menu;
+  -webkit-animation-duration: 10s;
+  -webkit-border-radius: 5px;
+  -webkit-animation-iteration-count: infinite
+    }
+@-webkit-keyframes menu {
+  0% {background: #C3C3C3}
+  20% {background: grey}
+  40% {background: blue}
+  60% {background: green}
+  80% {background: gold}
+  100% {background: #C3C3C3}
+    }
+#menu li {
+  display: inline;
+  padding: 10px;
+  float: left
+}
+#menu a {
+  color: black;
+  text-decoration: none;
+  padding: 8px, 8px, 8px, 8px, 8px, 8px
+    }

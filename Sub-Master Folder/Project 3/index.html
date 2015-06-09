@@ -1,0 +1,50 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="shortcut icon" href="Ainsley-Profile.jpg">
+<link rel="stylesheet" href="../stylesheet.css">
+<title> What am I doing with my life? </title>
+<script type="text/javascript">
+var x = 10;
+var y = 200; //x and y show the starting position of the ball and get shifted by the velocity coordinates
+var dx = 5;
+var dy = 10; //"d" is meant to show the velocity across coordinates. Strangely, y is also reversed as 0 is on the top
+var gravity = 0.5;
+function init() {
+  cxt = canvas.getContext('2d');
+  setInterval(draw, 10);
+    //The first parameter is the function while the second determines frames, with higher numbers making slower animations
+}
+function draw() {
+  cxt.clearRect(0, 0, canvas.width, canvas.height); //This constantly clears up the screen from with start/end coords to keep images from duping
+  cxt.beginPath(); //This starts the "drawing" of the circle
+  cxt.fillStyle = "red";
+  //Draws a circle of radius 20 at the coordinates (10, 200 atm) on the canvas
+  cxt.arc(x, y, 20, 0, Math.PI * 2, true); //x, y, radius, start angle, end angle, boolean. Math.PI * 2 is pi * 2, or a full circle
+  cxt.fill(); //"fill" gives the color to the object that "fillStyle" assigned
+  cxt.closePath(); //This ends the "drawing" process
+  //Boundaries
+  if(x < 0 || x >= 475) {
+      dx *= -0.8; //This gives the ball horizontal bouncing
+  }
+  if(y > 475) {
+      dy *= -0.8; //This gives the ball the bouncing aspect by changing it to -80% of its previous height
+  }
+  dy += gravity;
+  x += dx;
+  y += dy;
+}
+</script>
+<body onLoad="init()">
+    <div id="music">
+        <p> Song: Fluffing a Duck by Kevin MacLeod </p>
+        <audio src="duck.mp3" autoplay loop></audio>
+    </div>
+    <canvas id="canvas" width="500px" height="500px"></canvas>
+    <p class="title"> Idk what the point of this is </p>
+    <a class="link" href="#button"> <input id="button" type="submit" value="Subscrub" onclick="window.open('http://talk.smtcs.rocks/t/check-out-my-10min-googel/292', 'Window', 'width=300px, height=300px')"> </a>
+    <p class="footer"> Basic Physics Project made by James </p>
+    <a class="download" href="googel.html" download> Install Josh's Googel </a>
+    <div id="botBar">
+        <a href="../Project 1/Main.html"> Project 1</a> <a href="../Project 2/index.html"> Project 2 </a> <a href="../Project 3/index.html"> Project 3 </a> <a href="../Project 4/snake.html"> Project 4 </a> <a href="../Vindinium/index.html"> Vindinium </a> <a href="../Bot Test/index.html"> Bot Test </a>
+    </div>
+</body>

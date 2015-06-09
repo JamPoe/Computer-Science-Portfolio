@@ -1,0 +1,14 @@
+/* Not that much here... nothing special */
+canvas {
+    border: 1px solid black;
+}
+p {
+    position: absolute;
+    left: 350px;
+    top: 100px;
+}
+strong {
+    position: absolute;
+    left: 550px;
+    top: 90px;
+}

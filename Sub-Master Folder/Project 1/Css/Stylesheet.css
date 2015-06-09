@@ -1,0 +1,27 @@
+#navbar li {
+  list-style-type: none;
+  float: left;
+  padding: 5px;
+  display: inline;
+}
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+#navbar table {
+  background-color: grey;
+  border-radius: 10px;
+}
+@-webkit-keyframes navbar {
+  0% {background: grey};
+  20% {background: yellow};
+  40% {background: gold};
+  60% {background: purple};
+  80% {background: red};
+  100% {background: grey};
+}
+#navbar {
+  -webkit-animation-name: navbar;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}

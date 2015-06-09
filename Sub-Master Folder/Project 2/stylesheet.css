@@ -1,0 +1,111 @@
+/* The text in the navbar */
+#dec a {
+  text-decoration: none;
+  color: black;
+}
+#dec li {
+  list-style: none;
+  /* Padding will give some separation between all of the <li> elements within the div */
+  padding: 5px;
+  display: inline;
+  font-size: 12px;
+  
+}
+#dec td {
+  padding: 20px;
+}
+#dec table {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    /* The color of the background */
+    background: #ffffcc;
+    border-radius: 20px;
+    /* The code for animating the navbar */
+    -webkit-animation-name: table;
+    /* This makes the animation loop forever */
+    -webkit-animation-iteration-count: infinite;
+    /* This is the duration of the whole animation */
+    -webkit-animation-duration: 5s;
+}
+/* Additional animatiing code that changes the navbar's colors on certain percentages of the animation */
+@-webkit-keyframes table {
+   33% {background: #ffcd66};
+   66% {background: #faff99};
+   100% {background: #ffffcc};
+}
+strong {
+  /* The text size */
+  font-size: 24px;
+}
+/* The navbar itself */
+#dec {
+  /* This means the div follows as the page is scrolled */
+  position: fixed;
+  /* This makes it stick to the top of the page (Only fixed and absolute can be adjusted) */
+  top: 0px;
+}
+/* Small chunk of text that was used to highlight Josh's crimes */
+.shame {
+  text-decoration: underline;
+  color: black;
+}
+/* The code to make the easter egg look normal */
+.menu {
+  /* This removes any decorations, like underlining */
+  text-decoration: none;
+  /* The text color is black */
+  color: black;
+}
+/* The bottom of the page that displays the current content on the webpage */
+#content {
+  list-style: none;
+}
+/* The div for overall steam-related stuff (2 things) */
+#steam {
+    float: right;
+    transition: 0.5s;
+}
+#steam:hover {
+    box-shadow: 0px 0px 50px 10px lightgreen;
+}
+/* My profile picture for the steam div */
+.profile {
+    transition: 0.5s;
+    /* This sets the radius of the border I set */
+    border-radius: 10px;
+    /* This is simply a type of border */
+    border-style: ridge;
+    /* Thickness of border */
+    border-width: 4px;
+    /* The color of the border */
+    border-color: #66CCFF;
+    /* This position means that it is static, or still */
+    position: static;
+}
+.profile:hover {
+    border-color: lightgreen;
+}
+/* The steam logo, which overlays my profile */
+.logo {
+  /* This makes it stick to the right */
+  float: right;
+  /* This position allows you to edit it and adjust it around the page */
+  position: absolute;
+  /* The distance from the top of the page in pixels */
+  top: 155px;
+  /* The distance from the right side of the page in pixels */
+  right: 12px;
+  border-radius: 5px;
+}
+/* This class would turn the generator text red, to symbolize failiure and malfunctioning :( */
+.roll {
+  /* This makes the text turn red */
+  color: red;
+  /* This makes your cursor look like it is over a link */
+  cursor: pointer;
+}
+span {
+    color: red;
+}
