@@ -9,3 +9,14 @@
 body {
     overflow: hidden;
 }
+#container {
+    position: absolute;
+    left: 700px;
+    top: 0px;
+}
+#emote {
+    position: relative;
+}
+span {
+    text-decoration: underline;
+}

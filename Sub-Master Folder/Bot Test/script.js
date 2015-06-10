@@ -1,8 +1,12 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 var foodAmount = 0;
+var emotion = 0;
+var emote = document.getElementById("emote");
 c.width = 600;
 c.height = 600;
+
+var greeting = ["Hello.", "Hi.", "Oh hey there."];
 
 var box = {
     x: 300,
@@ -90,3 +94,5 @@ function createFood() {
     }
     setInterval(foodLoop, 0);
 }
+
+emote.innerHTML = "Jonathon: " + greeting[Math.floor(Math.random() * 3)];
