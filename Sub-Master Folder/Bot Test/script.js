@@ -1,18 +1,19 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 var foodAmount = 0;
-var emotion = 0;
 var emote = document.getElementById("emote");
 c.width = 600;
 c.height = 600;
 
 var greeting = ["Hello.", "Hi.", "Oh hey there."];
+var concern = ["Please keep your distance.", "Careful there!", "I would like some personal space"];
+var anger = ["Piss off!", "Get away from me!", "Back it up!"];
 
 var box = {
     x: 300,
     y: 300,
-    draw: function() {
-        ctx.fillStyle = "red";
+    draw: function(color) {
+        ctx.fillStyle = color;
         ctx.fillRect(this.x, this.y, 20, 20);
         ctx.fill();
     },
@@ -68,7 +69,8 @@ var box = {
 function animate() {
     ctx.clearRect(0, 0, c.width, c.height);
     box.move();
-    box.draw();
+    checkMouse();
+    box.draw("lightgreen");
 }
 
 setInterval(animate, 30);
@@ -84,7 +86,7 @@ function createFood() {
         x: mouseX,
         y: mouseY,
         draw: function() {
-            ctx.fillStyle = "lightgreen";
+            ctx.fillStyle = "red";
             ctx.fillRect(this.x, this.y, 10, 10);
             ctx.fill();
         },
@@ -93,6 +95,15 @@ function createFood() {
         food.draw();
     }
     setInterval(foodLoop, 0);
+}
+
+function checkMouse() {
+    if((mouseX - 160) === box.x || (mouseX + 160) === box.x || (mouseY - 160) > box.y || (mouseY + 160)) {
+        emote.innerHTML = "Jonathon: " + concern[Math.floor(Math.random() * 3)];
+    }
+    if((mouseX - 80) === box.x || (mouseY - 80) === box.y) {
+        emote.innerHTML = "Jonathon: " + anger[Math.floor(Math.random() * 3)];
+    }
 }
 
 emote.innerHTML = "Jonathon: " + greeting[Math.floor(Math.random() * 3)];
