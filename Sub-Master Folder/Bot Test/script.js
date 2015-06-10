@@ -16,16 +16,16 @@ var box = {
         if(foodAmount <= 0) {
             var rand = Math.random();
             if(rand <= .25) {
-                this.x += 5;
+                this.x += 1;
             }
             if(rand <= .5 && rand > .25) {
-                this.x -= 5;
+                this.x -= 1;
             }
             if(rand <= .75 && rand > .5) {
-                this.y += 5;
+                this.y += 1;
             }
             if(rand <= 1 && rand > .75) {
-                this.y -= 5;
+                this.y -= 1;
             }
             if(this.x < 0) {
                 this.x = 0;
