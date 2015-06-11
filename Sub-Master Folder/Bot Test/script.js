@@ -98,7 +98,7 @@ function createFood() {
 }
 
 function checkMouse() {
-    if((mouseX - 160) === box.x || (mouseX + 160) === box.x || (mouseY - 160) > box.y || (mouseY + 160)) {
+    if((mouseX - 160) === box.x || (mouseY - 160) === box.y) {
         emote.innerHTML = "Jonathon: " + concern[Math.floor(Math.random() * 3)];
     }
     if((mouseX - 80) === box.x || (mouseY - 80) === box.y) {
